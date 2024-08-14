@@ -60,7 +60,7 @@ export default function Home() {
     <>
       {/* app_main */}
       <MaxWidthWrapper>
-        <div className="pt-24 mx-auto text-center flex flex-col items-center mex-w-3xl sm:pt-52">
+        <div className="pt-24 mx-auto text-center flex flex-col items-center mex-w-3xl sm:pt-40">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Find the right freelance <br /> sevice,{" "}
             <span className="text-blue-600">right away</span>.
@@ -78,7 +78,7 @@ export default function Home() {
                 Get Started
               </button>
             </Link>
-            <button className="text-lg font-semibold border-2 rounded-lg bg-slate-10 py-2 px-4">
+            <button className="text-lg font-semibold border-2 rounded-lg bg-slate-100 py-2 px-4">
               Explore &rarr;
             </button>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
       </MaxWidthWrapper>
 
       {/* app_section */}
-      <section className="sm:pt-24 pt-14">
+      <section className="sm:pt-32 pt-14">
         <MaxWidthWrapper>
           <div className="flex flex-row gap-3 flex-wrap justify-center">
           {icons.map(({ Icon, content }) => (
