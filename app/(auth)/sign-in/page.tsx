@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 //zod resolver
 import { zodResolver } from "@hookform/resolvers/zod";
 
-//account credentials validator
+//auth cred validator
 import {
   AuthCredentialsValidator,
   TAuthCredentialsValidator,
@@ -18,7 +18,7 @@ import {
 //max width wrapper
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
-const Page = () => {
+const SignInPage = () => {
   const {
     register,
     handleSubmit,
@@ -28,8 +28,8 @@ const Page = () => {
   });
 
   const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {
-    //sending data to the server
-    console.log("hi there");
+    // sending data to the server
+    console.log("signing in");
   };
 
   return (
@@ -38,7 +38,7 @@ const Page = () => {
         <div className="container relative flex pt-28 flex-col items-center justify-center lg:px-0">
           <div className="mx-auto flex w-full flex-col justify-center space-y-8 sm:w-[400px] border rounded-lg p-8 border-gray-300 shadow-2xl bg-white">
             <div className="flex flex-col items-center space-y-3 text-center">
-              <h1 className="text-3xl font-bold text-gray-800">Create an account</h1>
+              <h1 className="text-3xl font-bold text-gray-800">Sign in to your account</h1>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="flex flex-col">
@@ -69,11 +69,11 @@ const Page = () => {
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
-                Sign up
+                Sign in
               </button>
               <div className="text-center">
-                <Link href="/sign-in" className="text-sm text-blue-600 hover:underline">
-                  Already have an account? Sign-in
+                <Link href="/sign-up" className="text-sm text-blue-600 hover:underline">
+                  Don’t have an account? Sign up
                 </Link>
               </div>
             </form>
@@ -84,4 +84,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default SignInPage;
