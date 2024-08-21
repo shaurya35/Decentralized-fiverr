@@ -1,3 +1,4 @@
+"use client"
 // max width wrapper
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
@@ -70,7 +71,7 @@ export default function Home() {
             freelance marketplace <br /> built on the Solana blockchain.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 mt-6">
-            <Link href="/login">
+            <Link href="/sign-up">
               <button
                 className="text-lg font-semibold text-white border-2 rounded-lg bg-blue-600 py-2
             px-4"
